@@ -126,3 +126,12 @@ STATIC_ROOT = BASE_DIR /'static'
 STATICFILES_DIRS = [
     'ecoshop/static',
 ]
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
+
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
