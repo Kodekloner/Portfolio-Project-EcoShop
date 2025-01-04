@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from .forms import RegistrationForm
+from .forms import RegistrationForm
 from .models import Account
 
 # Create your views here.
@@ -19,8 +19,7 @@ def register(request):
             messages.success(request, 'Registration Successful.')
             return redirect('register')
     else:
-        # form = RegistrationForm()
-        pass
+        form = RegistrationForm()
     context = {
         'form': form,
     }
