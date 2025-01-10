@@ -32,6 +32,9 @@ def register(request):
             user.phone_number = phone_number
             user.save()
 
+            # Create UserProfile
+            UserProfile.objects.create(user=user)
+
             # USER ACTIVATION
             current_site = get_current_site(request)
             mail_subject = 'Please activate your account'
@@ -106,7 +109,6 @@ def login(request):
             url = request.META.get('HTTP_REFERER')
             try:
                 query = requests.utils.urlparse(url).query
-                # next=/cart/checkout/
                 params = dict(x.split('=') for x in query.split('&'))
                 if 'next' in params:
                     nextPage = params['next']

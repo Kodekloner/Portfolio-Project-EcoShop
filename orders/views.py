@@ -177,7 +177,7 @@ def order_complete(request):
     })
     to_email = request.user.email
     send_email = EmailMessage(mail_subject, message, to=[to_email])
-    # send_email.send()
+    send_email.send()
 
     transID = payment.payment_id
 
