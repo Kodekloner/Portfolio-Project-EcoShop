@@ -12,8 +12,16 @@ source "$PYTHONPATH/activate" && {
 
     # Run superuser creation only on the leader instance
     if [[ $EB_IS_COMMAND_LEADER == "true" ]]; then
-        echo "from accounts.models import Account;
-        Account.objects.create_superuser('first_name', 'last_name', 'yourusername', 'password')" | python manage.py shell
+        python manage.py shell <<EOF
+    from accounts.models import Account
+    Account.objects.create_superuser(
+        'Billgate',
+        'Okoye',
+        'billgateokoye@gmail.com',
+        'admin',
+        '123456'
+    )
+    EOF
     else
         echo "This instance is not the leader. Skipping superuser creation."
     fi
