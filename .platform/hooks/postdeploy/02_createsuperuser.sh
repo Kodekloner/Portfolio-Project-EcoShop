@@ -19,7 +19,7 @@ from accounts.models import Account
 Account.objects.create_superuser(
     'Billgate',
     'Okoye',
-    'billgateokoye@gmail.com',
+    'billgateokoye1@gmail.com',
     'admin',
     '123456'
 )
