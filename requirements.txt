@@ -15,7 +15,7 @@ python-dateutil==2.9.0.post0
 python-decouple==3.8
 pytz==2024.2
 requests==2.32.3
-s3transfer==0.11.1
+s3transfer==0.6.1
 shortuuid==1.0.13
 six==1.17.0
 sqlparse==0.5.3
