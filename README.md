@@ -4,7 +4,7 @@ EcoShop is a web application built with Django, designed to help users find and 
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
-- Python 3.8 or later
+- Python 3.9 or later
 - pip (Python package installer)
 - Git
 - Virtualenv (optional, but recommended)
