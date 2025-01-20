@@ -10,6 +10,11 @@ from .forms import ReviewForm
 from django.contrib import messages
 from orders.models import OrderProduct
 
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+from .serializers import ProductSerializer
+
 # Create your views here.
 
 def store(request, category_slug=None):
@@ -105,3 +110,22 @@ def submit_review(request, product_id):
                 data.save()
                 messages.success(request, 'Thank you! Your review has been submitted.')
                 return redirect(url)
+
+@api_view(['GET'])
+def get_products(request):
+
+    product = Product.objects.all()
+
+    serializer = ProductSerializer(product, many=True)
+
+    return Response({"products": serializer.data})
+
+
+@api_view(['GET'])
+def get_product(request, product_id):
+
+    product = get_object_or_404(Product, id=product_id)
+
+    serializer = ProductSerializer(product, many=False)
+
+    return Response({ "product": serializer.data })
