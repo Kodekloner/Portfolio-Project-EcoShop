@@ -15,7 +15,7 @@ EcoShop is a web application built with Django, designed to help users find and 
 ---
 
 ## Live Deployment
-Access the live project here: [EcoShop](ecoshop-env.eba-kgdhbm56.us-east-2.elasticbeanstalk.com)
+Access the live project here: [EcoShop](http://ecoshop-env.eba-kgdhbm56.us-east-2.elasticbeanstalk.com)
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
