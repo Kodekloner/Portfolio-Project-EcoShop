@@ -1,4 +1,6 @@
-# EcoShop
+<p align="center">
+    <img src="https://ecoshop-alx.s3.amazonaws.com/static/images/logo.png" style="background: white; border-radius: 10%; padding: 10px" alt="Logo" width="200px">
+</p>
 
 ## Description
 EcoShop is a web application built with Django, designed to help users find and purchase eco-friendly products.
@@ -8,14 +10,12 @@ EcoShop is a web application built with Django, designed to help users find and 
 ## Version Information
 | Version | Release Date      | Notes                          |
 |---------|-------------------|--------------------------------|
-| 1.0.0   | January 15, 2025  | Initial release with core features: user auth, product catalog, cart, and payments. |
-| 1.1.0   | February 10, 2025 | Added support for Stripe payments and enhanced product search. |
-| 1.2.0   | March 5, 2025     | Improved performance, AWS deployment, and integrated analytics. |
+| 1.0.0   | January 25, 2025  | Initial release with core features: user auth, product, cart, and payments. |
 
 ---
 
 ## Live Deployment
-Access the live project here: [Live Deployment URL][ecoshop-env.eba-kgdhbm56.us-east-2.elasticbeanstalk.com]
+Access the live project here: [EcoShop](ecoshop-env.eba-kgdhbm56.us-east-2.elasticbeanstalk.com)
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
