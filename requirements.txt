@@ -6,7 +6,9 @@ charset-normalizer==3.4.1
 da-vinci==0.4.0
 Django==4.1.7
 django-admin-thumbnails==0.2.9
+django-filter==22.1
 django-storages==1.13.2
+djangorestframework==3.14.0
 idna==3.10
 jmespath==1.0.1
 pillow==11.1.0
@@ -20,5 +22,5 @@ shortuuid==1.0.13
 six==1.17.0
 sqlparse==0.5.3
 stripe==11.4.1
-typing_extensions==4.12.2
+typing-extensions==4.12.2
 urllib3==1.26.14
