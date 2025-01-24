@@ -1,15 +1,31 @@
 # EcoShop
 
-EcoShop is a web application built with Django, designed to help users find and purchase eco-friendly products. This README will guide you through the process of setting up and running the EcoShop project on your local machine.
+## Description
+EcoShop is a web application built with Django, designed to help users find and purchase eco-friendly products.
+
+---
+
+## Version Information
+| Version | Release Date      | Notes                          |
+|---------|-------------------|--------------------------------|
+| 1.0.0   | January 15, 2025  | Initial release with core features: user auth, product catalog, cart, and payments. |
+| 1.1.0   | February 10, 2025 | Added support for Stripe payments and enhanced product search. |
+| 1.2.0   | March 5, 2025     | Improved performance, AWS deployment, and integrated analytics. |
+
+---
+
+## Live Deployment
+Access the live project here: [Live Deployment URL][ecoshop-env.eba-kgdhbm56.us-east-2.elasticbeanstalk.com]
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
-- Python 3.9 or later
+- Python 3.9
 - pip (Python package installer)
 - Git
 - Virtualenv (optional, but recommended)
 
 ## Installation
+This README will guide you through the process of setting up and running the EcoShop project on your local machine.
 
 ### Clone the Repository
 First, clone the repository to your local machine using Git:
@@ -66,3 +82,6 @@ To run the development server, use the following command:
 python manage.py runserver
 ```
 Visit http://127.0.0.1:8000/ in your web browser to see the application running.
+
+
+[https://github.com/Kodekloner/Portfolio-Project-EcoShop]: https://github.com/Kodekloner/Portfolio-Project-EcoShop
